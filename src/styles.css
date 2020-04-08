@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css");
+.App {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+.App h1 {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background: blue;
+  width: 100%;
+  padding: 10px 0;
+  margin-top: -10px;
+  text-align: center;
+  color: white;
+}
+
+form {
+  position: sticky;
+  top: 8%;
+  left: 0;
+  padding: 10px;
+  background: #eee;
+}
+
+.button {
+  background: blue;
+  border: 1px solid white;
+  border-radius: 25px;
+  /* margin-top: -15px; */
+  padding: 15px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 1em;
+  transition: 0.25s ease-in-out;
+}
+.button:hover {
+  cursor: pointer;
+  background: lightcoral;
+}
+.button::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f002";
+}
+
+input[type="text"] {
+  padding-top: 15px;
+  border: none;
+  border-bottom: 1px solid grey;
+  background: transparent;
+  font-size: 1em;
+  width: 250px;
+  color: grey;
+  transition: 0.25s ease-in-out;
+}
+input[type="text"]:focus {
+  border-bottom: 1px solid black;
+  color: black;
+}
+
+body {
+  width: 100%;
+  background: #eee;
+  margin: 0 auto;
+  font-family: "Times New Roman", Times, serif;
+}
+
+img {
+  width: 100%;
+}
+a {
+  display: block;
+}
+
+.my-masonry-grid {
+  display: flex;
+  margin-left: -15px; /* gutter size offset */
+  width: auto;
+}
+.my-masonry-grid_column {
+  padding-left: 15px; /* gutter size */
+  background-clip: padding-box;
+}
+
+.my-masonry-grid_column > div {
+  background: grey;
+  margin-bottom: 30px;
+}
+.error {
+  background-color: #f00 !important;
+}
